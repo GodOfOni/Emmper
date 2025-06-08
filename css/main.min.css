@@ -248,8 +248,8 @@ body {
 }
 
 .card img {
-  width: 48px;
-  height: 48px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   margin-bottom: 1rem;
 }
@@ -264,3 +264,38 @@ body {
   font-size: 1rem;
   color: #555;
 }
+.service-img {
+  width: auto;
+  height: auto; /* powiększona wysokość */
+  object-fit: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.contact {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  color: var(--color-dark);
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-list li {
+  margin-bottom: 0.8rem;
+}
+
+.contact-list a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
