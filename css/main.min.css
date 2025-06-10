@@ -204,7 +204,7 @@ body {
 }
 
 .button--newsletter {
-  background: var(--color-primary);
+  background: var(--color-dark);
   color: #fff;
   border: none;
   padding: 0.8rem 1.2rem;
