@@ -61,7 +61,7 @@
           <p>Zabezpieczenia wykopów w technologii palisad, ścianki berlińskie</p>
         </li>
         <li class="card">
-          <img src="images/usługa-male-konstrukcje-oporowe.jpg" alt="Małe konstrukcje oporowe" />
+          <img src="images/usluga-male-konstrukcje-oporowe.jpg" alt="Małe konstrukcje oporowe" />
           <h3>Małe konstrukcje oporowe</h3>
           <p>Wykonywanie małych konstrukcji oporowych oraz podbicia fundamentów</p>
         </li>        
@@ -69,13 +69,16 @@
     </div>
   </section>
 
+<footer class="footer__container-address">
   <section class="call-to-action">
     <div class="container">
       <h2 class="section-title">Zacznij z nami już dziś!</h2>
-      <div class="container footer__container">
+      
         <form class="newsletter" action="https://formspree.io/f/mdkzezeb" method="POST">
+
           <label for="email" class="newsletter__label">Zostaw email a skontaktujemy się z tobą!</label>
           <div class="newsletter__container">
+            <div class="container footer__container">
             <input type="email" id="email" name="email" class="newsletter__input" placeholder="Twój email" required>
             <button type="submit" class="button--newsletter">Wyślij</button>
             <div id="form-message" style="color: green; margin-top: 10px;"></div>
@@ -86,14 +89,17 @@
   </section>
 
   <footer class="footer__container-address">
-    <p class="address__text">© 2025 Emmper. Wszelkie prawa zastrzeżone.</p>
+    
   </footer>
+  <p class="address__text">© 2025 Emmper. Wszelkie prawa zastrzeżone.</p>
 
   <script src="form-handler.js"></script>
   <script>
-    document.getElementById('scrollToServices').addEventListener('click', function () {
-      document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
-    });
+document.getElementById('scrollToServices').addEventListener('click', function () {
+  document.getElementById('email').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('email').focus(); // opcjonalnie: ustawia kursor w polu e-mail
+});
+
   </script>
 </body>
 </html>
