@@ -6,6 +6,11 @@
   <title>Emmper</title>
   <meta name="description" content="Emmper">
   <link rel="stylesheet" href="css/main.min.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -28,7 +33,7 @@
     <div class="container">
       <h1 class="hero__title">Profesjonalne usługi w zakresie fundamentów specjalnych i zabezpieczeń głębokich wykopów</h1>
       <p class="hero__subtitle">Posadowienia pośrednie, zabezpieczenia wykopów, małe konstrukcje oporowe, podbicia fundamentów – szybko i profesjonalnie.</p>
-      <button class="button--hero">Sprawdź naszą ofertę</button>
+      <button class="button--hero" id="scrollToServices">Skontaktuj się z nami zostawiając swój adres email!</button>
     </div>
   </section>
 
@@ -61,26 +66,34 @@
           <p>Wykonywanie małych konstrukcji oporowych oraz podbicia fundamentów</p>
         </li>        
       </ul>
-      
     </div>
   </section>
 
   <section class="call-to-action">
     <div class="container">
       <h2 class="section-title">Zacznij z nami już dziś!</h2>
-         <div class="container footer__container">
-      <form class="newsletter" action="https://formspree.io/f/mdkzezeb" method="POST">
-        <label for="email" class="newsletter__label">Zostaw email a skontaktujemy się z tobą!</label>
-        <div class="newsletter__container">
-          <input type="email" id="email" name="email" class="newsletter__input" placeholder="Twój email" required>
-          <button type="submit" class="button--newsletter">Wyślij</button>
-          <div id="form-message" style="color: green; margin-top: 10px;"></div>
-        </div>
-      </form>
-    </div>
+      <div class="container footer__container">
+        <form class="newsletter" action="https://formspree.io/f/mdkzezeb" method="POST">
+          <label for="email" class="newsletter__label">Zostaw email a skontaktujemy się z tobą!</label>
+          <div class="newsletter__container">
+            <input type="email" id="email" name="email" class="newsletter__input" placeholder="Twój email" required>
+            <button type="submit" class="button--newsletter">Wyślij</button>
+            <div id="form-message" style="color: green; margin-top: 10px;"></div>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
-  <footer class="footer__container-address"><p class="address__text">© 2025 Emmper. Wszelkie prawa zastrzeżone.</p></footer>
+
+  <footer class="footer__container-address">
+    <p class="address__text">© 2025 Emmper. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+
   <script src="form-handler.js"></script>
+  <script>
+    document.getElementById('scrollToServices').addEventListener('click', function () {
+      document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
