@@ -156,7 +156,7 @@ body {
 }
 
 .card img {
-  width: 100px;
+  width: 250px;
   height: auto;
   object-fit: contain;
   margin-bottom: 1rem;
