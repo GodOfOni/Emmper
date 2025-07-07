@@ -171,24 +171,34 @@ body {
   flex: 1 1 300px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center; /* wyśrodkowanie pionowe */
+  justify-content: center;
   text-align: center;
 }
 
+.card_partners-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .card_partners h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.2rem;
   color: #333;
 }
 
 .card_partners img {
-  display: block;
-  max-width: 150px;
+  max-width: 140px;
   height: auto;
-  margin: 0 auto;
+  display: block;
 }
+.card_partners-name
+{padding-bottom: 70px;
+padding-top: 0px;}
+
+
 
 
 
