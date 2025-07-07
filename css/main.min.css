@@ -162,6 +162,37 @@ body {
   object-fit: contain;
   margin-bottom: 1rem;
 }
+.card_partners {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  flex: 1 1 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* wyśrodkowanie pionowe */
+  text-align: center;
+}
+
+.card_partners h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card_partners img {
+  display: block;
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+
+
 
 .card h3 {
   font-size: 1.25rem;
