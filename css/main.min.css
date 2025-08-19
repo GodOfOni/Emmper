@@ -375,3 +375,43 @@ img {
     margin-bottom: 10px;
   }
 }
+.about {
+  background: #fff;
+}
+
+.about__container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about__text {
+  flex: 1 1 500px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about__text p {
+  margin-bottom: 1.2rem;
+}
+
+.about__highlight {
+  font-weight: bold;
+  color: var(--color-primary);
+  background: var(--color-light);
+  padding: 1rem;
+  border-left: 4px solid var(--color-secondary);
+  border-radius: 4px;
+}
+
+.about__image {
+  flex: 1 1 400px;
+}
+
+.about__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
